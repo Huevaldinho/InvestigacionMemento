@@ -19,7 +19,7 @@ class Originator {
         return new Memento(state);
     }
 
-    //Restaura el estado al memento entrante.
+    //Restaura el estado usando el memento entrante.
     public void restore(Memento m) {
         state = m.getState();
         System.out.println("Originator: State after restoring from Memento: " + state);

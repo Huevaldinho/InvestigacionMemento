@@ -13,13 +13,13 @@ class Caretaker {
     //(modificado para usar con Stack en vez de ArrayList).
     private Stack<Memento> mementos = new Stack<>();
 
-    //Guarda el memento en el topo de la pila.
+    //Guarda el memento en el tope de la pila.
     public void addMemento(Memento m) {
         mementos.push(m);
     }
 
     //Extrae el memento del tope de la pila (ultimo agregado).
-    public Memento getMemento() {
+    public Memento restoreMemento() {
         if (!mementos.isEmpty()) {
             return mementos.pop();
         }

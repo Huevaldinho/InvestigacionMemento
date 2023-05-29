@@ -19,9 +19,9 @@ public class MementoDemo {
         caretaker.addMemento(originator.save());//Guarda el memento con State3
 
         originator.setState("State4");//Settea State4
-        originator.restore(caretaker.getMemento());//Restaura al State3
+        originator.restore(caretaker.restoreMemento());//Restaura al State3
 
         originator.setState("State5");//Settea State3
-        originator.restore(caretaker.getMemento());//Restaura al State2
+        originator.restore(caretaker.restoreMemento());//Restaura al State2
     }
 }
